@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Movie Recommendation System</title>
+</head>
+
+<body>
+
+<h1>🎬 Movie Recommendation System</h1>
+
+<form method="POST">
+
+<label>Select Genre:</label>
+
+<select name="genre">
+<option>Action</option>
+<option>Comedy</option>
+<option>SciFi</option>
+<option>Romance</option>
+</select>
+
+<button type="submit">Recommend</button>
+
+</form>
+
+<h2>Recommended Movies:</h2>
+
+<ul>
+{% for movie in movies %}
+<li>{{movie}}</li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
